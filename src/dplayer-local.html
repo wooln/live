@@ -1,0 +1,32 @@
+<html>
+<head>
+    <time>player</time>
+</head>
+
+<body>
+    <h1>player</h1>
+    <div id="dplayer"></div>
+    <script src="../node_modules/dplayer/dist/DPlayer.min.js"></script>
+    <script>
+
+        const dp = new DPlayer({
+            container: document.getElementById('dplayer'),
+            screenshot: true,
+            video: {
+                // url: 'http://live.lifelive.top/live/live.flv',
+                url: 'demo.mp4',
+                pic: 'demo.jpg',
+                thumbnails: 'thumbnails.jpg',
+            },
+            subtitle: {
+                url: 'webvtt.vtt',
+            },
+            danmaku: {
+                id: 'demo',
+                api: 'http://www.lifelive.top:1207/',
+            },
+        });
+    </script>
+</body>
+
+</html>

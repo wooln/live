@@ -1,0 +1,16 @@
+{
+  "name": "live",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nplayer/danmaku": "^1.0.12",
+    "dplayer": "^1.26.0",
+    "nplayer": "^1.0.12"
+  }
+}

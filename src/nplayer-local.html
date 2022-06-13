@@ -1,0 +1,37 @@
+<html>
+
+</html>
+
+<head>
+    <time>player</time>
+</head>
+
+<body>
+    <h1>player</h1>
+    <div id="dplayer"></div>
+    <script src="../node_modules/nplayer/dist/index.min.js"></script>
+    <script src="../node_modules/@nplayer/danmaku/dist/index.min.js"></script>
+    <script>
+
+        const danmakuOptions = {
+            items: [
+                { time: 1, text: '弹幕1～' },
+                { time: 10, text: '弹幕2～' },
+                { time: 20, text: '弹幕3～' },
+                { time: 30, text: '弹幕4～' },
+                { time: 40, text: '弹幕5～' },
+                { time: 50, text: '弹幕6～' },
+                { time: 60, text: '弹幕7～' },
+            ]
+        }
+
+        const player = new NPlayer.Player({
+            src: "demo.mp4",
+            plugins: [new NPlayerDanmaku(danmakuOptions)] //NPlayerDanmaku
+
+        });
+
+        player.mount(document.body);
+
+    </script>
+</body>
